@@ -1,0 +1,14 @@
+type:connect, msg:101a00044d5154540402003c000e6d717474785f3465633166353562
+type:connack, msg:20020000
+type:publish, msg:301b0005746f7069637b0a2020226d7367223a202268656c6c6f220a7d
+type:puback, msg:40022567
+type:pubrec, msg:50022566
+type:pubrel, msg:62022566
+type:pubcomp, msg:70022566
+type:subscribe, msg:820d25650008737562746f70696300
+type:suback, msg:9003256500
+type:unsubscribe, msg:a20c25680008737562746f706963
+type:unsuback, msg:b0022568
+type:pingreq, msg:c000
+type:pingresp, msg:d000
+type:disconnect, msg:e000
