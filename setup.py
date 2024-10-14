@@ -10,9 +10,7 @@ setup(
     long_description_content_type="text/markdown",
     url="http://gitlab.TWshop/michaela/mqtt_parser.git",  # URL to your project repository
     packages=find_packages(),  # Automatically find packages in your library
-    package_data={
-        '': ['*.py'],  # Include all .py files from all folders
-    }
+    package_data={ '': ['*.py'] }
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
