@@ -1,0 +1,39 @@
+# Build systems for 'wheel' and 'setuptools' of version 61.0.0 and higher. Only in version 61 was introsuced full support for parsing 'pyproject.toml'.
+[build-system]
+requires = [
+    "setuptools >= 61.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+#[tool.setuptools]
+## If you have several folders, you have to specify which one is the package.
+#packages = ["productname_server"]
+
+[tool.setuptools.packages.find]
+include = ["packages*"]
+
+
+# Add all the static files.
+[tool.setuptools.package-data]
+"mqtt_server" = ["**"]
+
+[project]
+# Name of the package.
+name = "mqtt_server"
+# This is needed in order to get the 'version' variable from '[tool.setuptools.dynamic]' section.
+dynamic = ["version"]
+# Authors. 'email' section can be added for each author.
+authors = [
+  { name="Michael Amar" }
+]
+# Short description.
+description = "MQTT parser"
+readme = "README.md"
+requires-python = ">=3.11"
+
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
