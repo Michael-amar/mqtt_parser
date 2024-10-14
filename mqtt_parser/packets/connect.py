@@ -1,7 +1,7 @@
-from mqtt_data_types import *
-from packets.packet import  Packet, MQTTVariableHeader, MQTTPayload, MQTTFixedHeader
-from StreamReader import StreamReader
-from utils import update_flag_byte
+from ..mqtt_data_types import *
+from .packet import  Packet, MQTTVariableHeader, MQTTPayload, MQTTFixedHeader
+from ..StreamReader import StreamReader
+from ..utils import update_flag_byte
 from enum import Enum
 
 

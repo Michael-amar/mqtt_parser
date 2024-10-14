@@ -1,4 +1,4 @@
-from StreamReader import *
+from .StreamReader import *
 from enum import IntEnum, StrEnum
 
 class PacketFixedHeaderFlags(IntEnum):

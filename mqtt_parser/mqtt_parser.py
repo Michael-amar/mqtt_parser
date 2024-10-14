@@ -1,9 +1,10 @@
-from StreamReader import BytesStreamReader, StreamReader
-from packets.packet import MQTTFixedHeader, Packet
-from packets.connect import ConnectPacket
+
+from .StreamReader import BytesStreamReader, StreamReader
+from .packets.packet import  MQTTFixedHeader, Packet
+from .packets.connect import ConnectPacket
 import importlib
 
-from mqtt_data_types import PacketType
+from .mqtt_data_types import PacketType
 
 import json
 
@@ -26,7 +27,7 @@ def parse_mqtt(stream : StreamReader, Mqtt_version = None):
 
 
 
-    mqtt_version = importlib.import_module(f"packets.v{MQTT_VERSION}")
+    mqtt_version = importlib.import_module(f".packets.v{MQTT_VERSION}", package="mqtt_parser")
 
     packet = None
 

@@ -1,9 +1,9 @@
-from mqtt_data_types import *
-from mqtt_data_types import Literals
-from packets.packet import  Packet, MQTTVariableHeader, MQTTPayload, MQTTFixedHeader
-from StreamReader import StreamReader
+from mqtt_parser.mqtt_data_types import *
+from mqtt_parser.mqtt_data_types import Literals
+from mqtt_parser.packets.packet import  Packet, MQTTVariableHeader, MQTTPayload, MQTTFixedHeader
+from mqtt_parser.StreamReader import StreamReader
 
-from utils import update_flag_byte
+from mqtt_parser.utils import update_flag_byte
 
 class ConnackVariableHeader(MQTTVariableHeader):
     def init_from_stream(self, fixed_header : MQTTFixedHeader, stream : StreamReader):

@@ -1,6 +1,6 @@
-from mqtt_data_types import *
-from packets.packet import Packet, MQTTVariableHeader, MQTTPayload, MQTTFixedHeader
-from StreamReader import StreamReader
+from mqtt_parser.mqtt_data_types import *
+from mqtt_parser.packets.packet import Packet, MQTTVariableHeader, MQTTPayload, MQTTFixedHeader
+from mqtt_parser.StreamReader import StreamReader
 
 
 class UnsubackVariableHeader(MQTTVariableHeader):

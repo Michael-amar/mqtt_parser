@@ -1,7 +1,5 @@
-import json
-import unittest
-import mqtt_parser
-from StreamReader import BytesStreamReader
+import mqtt_parser.mqtt_parser
+from mqtt_parser.StreamReader import BytesStreamReader
 from pprint import pprint
 
 """

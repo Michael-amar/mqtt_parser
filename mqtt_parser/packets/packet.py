@@ -1,6 +1,6 @@
-from mqtt_data_types import ByteInteger, Literals, PacketType, VariableByteInteger
-from StreamReader import StreamReader
-from utils import split_byte, update_flag_byte
+from ..mqtt_data_types import ByteInteger, Literals, PacketType, VariableByteInteger
+from ..StreamReader import StreamReader
+from ..utils import split_byte, update_flag_byte
 
 class MQTTFixedHeader:
     def __init__(self, stream : StreamReader, **kwargs):
