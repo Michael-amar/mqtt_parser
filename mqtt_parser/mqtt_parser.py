@@ -83,8 +83,8 @@ def parse_mqtt(stream : StreamReader, Mqtt_version = None):
 
     return json.loads(packet.as_json())
 
-def parse(hex_bytes : bytearray):
+def parse(hex_bytes : bytearray, version = None):
     bytesStream = BytesStreamReader(hex_bytes)
-    return parse_mqtt(bytesStream)
+    return parse_mqtt(bytesStream, version)
 
     
